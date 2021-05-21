@@ -1,1 +1,1 @@
-http://reform.github.io
+http://reform-barbershop.com
