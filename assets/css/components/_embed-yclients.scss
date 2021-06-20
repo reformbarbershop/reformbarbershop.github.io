@@ -1,0 +1,37 @@
+.embed-yclients {
+  max-width: 900px;
+  margin: auto;
+}
+
+.v-modal {
+  opacity: 0.8 !important;
+}
+
+.el-dialog {
+  border-radius: 25px !important;
+  border: 0;
+  box-shadow: 7px 7px 18px 0 rgba(53, 54, 68, 0.24) !important;
+
+  @media only screen and (max-width: 1200px) {
+    width: 60% !important;
+  }
+
+  @media only screen and (max-width: 992px) {
+    width: 70% !important;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 90% !important;
+  }
+}
+
+.el-dialog__headerbtn .el-dialog__close {
+  font-size: 26px;
+  color: black !important;
+}
+
+.el-dialog__headerbtn:focus .el-dialog__close,
+.el-dialog__headerbtn:hover .el-dialog__close {
+  color: var(--background-color) !important;
+}
+

@@ -1,0 +1,62 @@
+.social {
+  padding: 90px 0;
+  position: relative;
+  z-index: 5;
+
+  @media only screen and (max-width: 1200px) {
+    padding: 50px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    @include titleFont(50px, black, 400);
+
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    @media only screen and (max-width: 1200px) {
+      transform: scale(0.8);
+    }
+
+    &::after {
+      content: "";
+      width: 250px;
+      height: 250px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url(../images/instagram-logo.svg);
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: rotateY(-22deg) rotateX(19deg) translateZ(22.5rem);
+      opacity: 0.05;
+      z-index: -1;
+      transition: 0.4s;
+      transition-property: opacity, transform;
+    }
+
+    &:hover {
+      &::after {
+        transform: scale(1.2) rotateY(-22deg) rotateX(19deg) translateZ(18.5rem);
+        opacity: 0.2;
+      }
+    }
+  }
+}
