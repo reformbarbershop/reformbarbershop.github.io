@@ -10,7 +10,8 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -81,6 +82,7 @@
     "postcss-loader": "^4.1.0",
     "postcss-url": "^10.1.1",
     "prettier": "^2.1.2",
+    "push-dir": "^0.4.1",
     "stylelint": "^13.7.2",
     "ts-loader": "^8.0.11"
   }

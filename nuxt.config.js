@@ -1,5 +1,8 @@
 export default {
   target: 'static',
+  router: {
+    base: '/reformbarbershop.github.io/'
+  },
   ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
