@@ -77,6 +77,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       position: relative;
       z-index: 1;
       background-color: var(--header-color);
@@ -107,7 +108,8 @@
       &:hover {
         transform: scale(1);
 
-        i {
+        i,
+        span {
           color: white;
         }
       }
@@ -154,6 +156,14 @@
         color: #bdbdbd;
         display: block;
         opacity: 1;
+        transition: color 0.4s;
+      }
+
+      span {
+        @include textFont(30px, #bdbdbd, 400);
+
+        display: block;
+        margin-top: 10px;
         transition: color 0.4s;
       }
     }

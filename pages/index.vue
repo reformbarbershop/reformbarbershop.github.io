@@ -4,6 +4,7 @@
     <embed-map />
     <social />
     <gallery />
+    <gallery-2 />
   </page-wrapper>
 </template>
 
@@ -13,6 +14,7 @@ import Tiles from '@/components/Tiles'
 import EmbedMap from '@/components/EmbedMap'
 import Social from '@/components/Social'
 import Gallery from '@/components/Gallery'
+import Gallery2 from '@/components/Gallery2'
 
 export default {
   layout: 'default',
@@ -21,7 +23,8 @@ export default {
     Tiles,
     EmbedMap,
     Social,
-    Gallery
+    Gallery,
+    Gallery2
   },
   data() {
     return {
@@ -30,7 +33,7 @@ export default {
   },
   head() {
     return {
-      title: 'REFORM'
+      title: this.title
     }
   },
   mounted() {

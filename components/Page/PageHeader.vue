@@ -7,10 +7,14 @@
           <img :src="require('~/assets/images/logo.svg')" alt="">
         </nuxt-link>
       </div>
-      <a href="#contacts" class="scroll_down">
+      <a href="javascript:;" class="scroll_down">
         <i class="icon-arrow" />
       </a>
     </div>
+    <a href="tel:+380983937923" class="cta">
+      <i class="icon-phone" />
+      <span>Записатись</span>
+    </a>
   </header>
 </template>
 

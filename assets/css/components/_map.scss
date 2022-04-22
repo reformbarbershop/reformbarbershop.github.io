@@ -75,6 +75,34 @@
         margin-bottom: 30px;
       }
     }
+
+    p {
+      @include textFont(16px, white, 400);
+
+      margin-top: 50px;
+
+      @media only screen and (max-width: 1200px) {
+        margin-top: 30px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+    }
+
+    .cta_btn {
+      margin-top: 50px;
+
+      @media only screen and (max-width: 1200px) {
+        margin-top: 30px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &__object {
@@ -117,6 +145,14 @@
       left: 0;
       width: 1300px;
       height: 100%;
+
+      @media only screen and (max-width: 1200px) {
+        width: 900px;
+      }
+
+      @media only screen and (max-width: 992px) {
+        width: 600px;
+      }
 
       @media only screen and (max-width: 767px) {
         width: 100%;

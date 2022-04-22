@@ -10,6 +10,7 @@
 .el-dialog {
   border-radius: 25px !important;
   border: 0;
+  overflow: hidden;
   box-shadow: 7px 7px 18px 0 rgba(53, 54, 68, 0.24) !important;
 
   @media only screen and (max-width: 1200px) {
@@ -23,6 +24,26 @@
   @media only screen and (max-width: 767px) {
     width: 90% !important;
   }
+
+  &__header {
+    padding: 0 !important;
+  }
+
+  &__body {
+    padding: 0 !important;
+  }
+}
+
+.el-dialog__headerbtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white !important;
+  top: 10px !important;
+  right: 10px !important;
 }
 
 .el-dialog__headerbtn .el-dialog__close {
